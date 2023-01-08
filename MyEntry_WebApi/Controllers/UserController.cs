@@ -62,6 +62,8 @@ namespace MyEntry_WebApi.Controllers
             try
             {
                 
+
+
                SQLDBPro oDB = new SQLDBPro();
                 SQLParam[] argParams = {
                                      new SQLParam("@ViewMode", 1)
