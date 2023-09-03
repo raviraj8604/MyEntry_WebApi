@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -12,6 +13,8 @@ namespace MyEntry_WebApi.Controllers
         {
             ViewBag.Title = "Home Page";
 
+            IPAddress[] localIPs = Dns.GetHostAddresses(Dns.GetHostName());
+          
             return View();
         }
     }
